@@ -66,7 +66,7 @@ padding: 0cm;
 }
 .title_container {
 width: $if(poster_width)$$poster_width$$else$45in$endif$;
-height: calc($if(poster_height)$$poster_height$$else$38in$endif$ * 0.15);
+height: calc($if(poster_height)$$poster_height$$else$38in$endif$ * $if(header_proportion)$$header_proportion$$else$0.15$endif$);
 overflow: hidden;
 background-color: $if(primary_colour)$$primary_colour$$else$#0b4545$endif$;
 border: $if(titlebox_borderwidth)$$titlebox_borderwidth$$else$0$endif$ solid $if(secondary_colour)$$secondary_colour$$else$#0b4545$endif$;
